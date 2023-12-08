@@ -438,11 +438,13 @@ hr {
   font-weight: bold;
   padding-top: 10px;
   text-transform: uppercase;
+  color:#2b2b2b;
 }
 .progress-percent-small {
   display: block;
   float: right;
   padding-right: 80px;
+  color: #2b2b2b;
 }
 /* END RESUME */
 
