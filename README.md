@@ -1,4 +1,4 @@
-# khchuang12.github.io
+# Kody Chuang Personal Website using HTML/CSS/JS!
 Hi thanks for visiting my personal website! This project was heavily coded and edited by myself, though it was based on 2 free HTML/CSS templates:
 
 https://www.free-css.com/free-css-templates/page237/n5
