@@ -454,10 +454,34 @@ hr {
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
-  padding-top: 60px;
-  padding-bottom: 100px;
+  padding-top: 100px; /* Increase padding to move content down */
+  position: relative; /* Ensure positioning for child elements */
+  z-index: 0; /* Ensure it is behind the circle image */
 }
+
+.circle-image-container {
+  position: sticky; /* Fixed position relative to the viewport */
+  left: 15%;
+  transform: translateY(-185%);
+  width: 260px; /* Adjust size */
+  height: 260px; /* Adjust size */
+  overflow: hidden; /* Hide any overflow */
+  border-radius: 50%; /* Make the container circular */
+  border: 5px solid #eb5424; /* Add border here */
+   /* Optional: adds shadow for better visibility */
+  z-index: 1; /* Ensure it is above other elements */
+}
+
+.circle-image-container img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the circle without distortion */
+  transform: scale(1.4) translate(-3%,2%);
+  display: block; /* Removes bottom space from the image */
+}
+
 /* END ABOUT */
+
 
 /* START SOCIAL */
 .tm-social {
@@ -489,6 +513,10 @@ hr {
   color: #ffffff;
   display: inline-block;
   text-decoration: none;
+}
+.tm-social .fa {
+  font-size: 30px;
+  /* Ensure all other settings are identical */
 }
 .tm-social .media .fa {
   background: #ffffff;
